@@ -55,6 +55,7 @@ function App() {
     }
 
     await updateDoc(contactDoc, newFields);
+    setEdit(false);
     getUsers();
   }
 
