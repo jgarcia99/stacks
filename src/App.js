@@ -127,7 +127,7 @@ function App() {
       <h2>Users</h2>
       {users.map((user, index) => {
         return (
-          <div key={user.id} className={`container container-${index}`}>
+          <div key={user.id} className={(!editing ? 'wrapper' : `container container-${index}`)}>
           {!editing
            ? (<Card sx={{ maxWidth: 275 }}>
               <CardContent>
